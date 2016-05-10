@@ -21,4 +21,10 @@ public class ContentDaoImp implements ContentDao{
 		return ls;
 	}
 
+	@Override
+	public int getIntCount(String sql) {
+		return jdbcTemplate.queryForObject(sql, Integer.class);
+		
+	}
+
 }

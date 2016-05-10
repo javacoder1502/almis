@@ -18,7 +18,7 @@
 		</section>
 		<div class="sidebar-nav navbar-collapse">
 
-		   <ul class="nav" id="side-menu">
+			<ul class="nav" id="side-menu">
 				<li><a href="#"> <i class="fa fa-sitemap fa-fw"></i>Content
 						Response<span class="fa arrow"></span>
 				</a>
@@ -120,77 +120,92 @@
 							</ul></li>
 
 					</ul> <!-- /.nav-second-level --></li>
-			   <li>
-                            <a href="/ContentMIS/Waphits/Video/datewise"><i class="fa fa-sitemap fa-fw"></i> Users Response<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                              
-                                <li>
-                                    <a href="#">Video <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li style="background: #337ab7; color: #fff; border-top: 1px solid #efefef;">
-                                             <a href="/ContentMIS/Waphits/Video/datewise" style="color: #fff;">DateWise</a>
-                                        </li>
-                                        <li style="background: #337ab7; color: #fff; border-top: 1px solid #efefef;">
-                                            <a href="/ContentMIS/Waphits/Video/hourwise" style="color: #fff;">Hour Wise</a>
-                                        </li>
-                                       
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">Wallpaper <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li style="background: #337ab7; color: #fff; border-top: 1px solid #efefef;">
-                                            <a href="/ContentMIS/Waphits/Wallpaper/datewise" style="color: #fff;">DateWise</a>
-                                        </li>
-                                        <li style="background: #337ab7; color: #fff; border-top: 1px solid #efefef;">
-                                            <a href="/ContentMIS/Waphits/Wallpaper/hourwise" style="color: #fff;">Hour Wise</a>
-                                        </li>
-                                       
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">Animation <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li style="background: #337ab7; color: #fff; border-top: 1px solid #efefef;">
-                                            <a href="/ContentMIS/Waphits/Animaton/datewise" style="color: #fff;">DateWise</a>
-                                        </li>
-                                        <li style="background: #337ab7; color: #fff; border-top: 1px solid #efefef;">
-                                            <a href="/ContentMIS/Waphits/Animaton/hourwise" style="color: #fff;">Hour Wise</a>
-                                        </li>
-                                       
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">Game <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li style="background: #337ab7; color: #fff; border-top: 1px solid #efefef;">
-                                           <a href="/ContentMIS/Waphits/Game/datewise" style="color: #fff;">DateWise</a>
-                                        </li>
-                                        <li style="background: #337ab7; color: #fff; border-top: 1px solid #efefef;">
-                                           <a href="/ContentMIS/Waphits/Game/hourwise" style="color: #fff;">Hour Wise</a>
-                                        </li>
-                                       
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">Ringtone <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li style="background: #337ab7; color: #fff; border-top: 1px solid #efefef;">
-                                            <a href="/ContentMIS/Waphits/Ringtone/datewise" style="color: #fff;">DateWise</a>
-                                        </li>
-                                        <li style="background: #337ab7; color: #fff; border-top: 1px solid #efefef;">
-                                            <a href="/ContentMIS/Waphits/Ringtone/hourwise" style="color: #fff;">Hour Wise</a>
-                                        </li>
-                                       
-                                    </ul>
-                                </li>
-                                
-                                
-                                
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
 
+
+
+
+				<li><a href="#"><i class="fa fa-bar-chart-o fa-fw"></i>
+						Response<span class="fa arrow"></span></a>
+					<ul class="nav nav-second-level">
+						<li><a href="">Video<span
+								class="fa arrow"></span></a>
+							<ul class="nav nav-third-level">
+								<li
+									style="background: #337ab7; color: #fff; border-top: 1px solid #efefef;">
+									<a href="/ContentMIS/Waphits/Video/datewise"
+									style="color: #fff;">DateWise</a>
+								</li>
+
+								<li
+									style="background: #337ab7; color: #fff; border-top: 1px solid #efefef;">
+									<a href="/ContentMIS/Waphits/Video/hourwise"
+									style="color: #fff;">HourWise</a>
+								</li>
+
+							</ul></li>
+						<li><a href="">Wallpaper<span
+								class="fa arrow"></span></a>
+
+							<ul class="nav nav-third-level">
+								<li
+									style="background: #337ab7; color: #fff; border-top: 1px solid #efefef;">
+									<a href="/ContentMIS/Waphits/Wallpaper/datewise"
+									style="color: #fff;">DateWise</a>
+								</li>
+								<li
+									style="background: #337ab7; color: #fff; border-top: 1px solid #efefef;">
+									<a href="/ContentMIS/Waphits/Wallpaper/hourwise"
+									style="color: #fff;">HourWise</a>
+								</li>
+
+							</ul></li>
+						<li><a href="">Animation<span
+								class="fa arrow"></span></a>
+							<ul class="nav nav-third-level">
+								<li
+									style="background: #337ab7; color: #fff; border-top: 1px solid #efefef;">
+									<a href="/ContentMIS/Waphits/Animation/datewise"
+									style="color: #fff;">DateWise</a>
+								</li>
+								<li
+									style="background: #337ab7; color: #fff; border-top: 1px solid #efefef;">
+									<a href="/ContentMIS/Waphits/Animaton/hourwise"
+									style="color: #fff;">HourWise</a>
+								</li>
+
+							</ul></li>
+						<li><a href="">Game<span
+								class="fa arrow"></span></a>
+							<ul class="nav nav-third-level">
+								<li
+									style="background: #337ab7; color: #fff; border-top: 1px solid #efefef;">
+									<a href="/ContentMIS/Waphits/Game/datewise"
+									style="color: #fff;">DateWise</a>
+								</li>
+								<li
+									style="background: #337ab7; color: #fff; border-top: 1px solid #efefef;">
+									<a href="/ContentMIS/Waphits/Game/hourwise"
+									style="color: #fff;">HourWise</a>
+								</li>
+
+							</ul></li>
+						<li><a href="">Ringtone<span
+								class="fa arrow"></span></a>
+							<ul class="nav nav-third-level">
+								<li
+									style="background: #337ab7; color: #fff; border-top: 1px solid #efefef;">
+									<a href="/ContentMIS/Waphits/Ringtone/datewise"
+									style="color: #fff;">DateWise</a>
+								</li>
+								<li
+									style="background: #337ab7; color: #fff; border-top: 1px solid #efefef;">
+									<a href="/ContentMIS/Waphits/Ringtone/hourwise"
+									style="color: #fff;">HourWise</a>
+								</li>
+
+							</ul></li>
+
+					</ul> <!-- /.nav-Third-level --></li>
 
 			</ul>
 		</div>

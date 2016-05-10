@@ -29,6 +29,7 @@
 <link href="<c:url value="/resources/css/datepicker.css" />"
 	rel="stylesheet" type="text/css" />
 <script src="<c:url value="/resources/scripts/allScript.js" />"></script>
+
 </head>
 
 
@@ -50,22 +51,25 @@
 					</div>
 					<section class="main-area"> <section class="date-wise">
 					<form>
+
 						<input name="date" type="text" class="dp" id="dp2"><br>
-						<input type="button" value="submit" class="sub" onclick="showContentCount('${onSubmitLink}')">
+
+						<select name="lang" id="lang">
+							<option value="">Select Value</option>
+							<option value="All">All</option>
+							<option value="English">English</option>
+							<option value="Sinhala">Sinhala</option>
+							<option value="Arabic">Arabic</option>
+							
+
+						</select> <br>
+						<input type="button" value="submit" class="sub"
+							onclick="makingPages('${onSubmitLink}')">
 					</form>
-					<div id="wait">
+					<section class="result">
+					<div id="wait"></div>
 
-
-						<section class="result">
-						
-
-						</section>
-
-
-					</div>
-
-
-					</section> </section>
+					</section> </section> </section>
 					<!-- /.col-lg-12 -->
 				</div>
 				<!-- /.row -->
