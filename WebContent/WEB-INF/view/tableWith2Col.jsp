@@ -13,4 +13,9 @@
 	</tr>
 	
 	</c:forEach>
+	
+	
+	
 </table>
+
+<a href='<c:url value="/contentUploadDetails/ContentUploadExport"></c:url>'>Download Excel</a>

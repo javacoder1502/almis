@@ -2,11 +2,15 @@ package contentMIS.controller;
 
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
 
 import contentMIS.domain.ContentPrvCount;
@@ -15,6 +19,11 @@ import contentMIS.service.ContentCountImp;
 import contentMIS.utility.table.PaginationHelper;
 
 @Controller
+//@SessionAttributes using for display content in excel where
+//CountAndValue content list of java class object and tbl_column1_display_name content the first heding name
+//and tbl_column2_display_name content second heading in excel
+@SessionAttributes({"CountAndValue","tbl_column1_display_name","tbl_column2_display_name"})
+
 public class ContentController {
 
 	@Autowired
@@ -69,6 +78,26 @@ public class ContentController {
 		return model;
 	}
 
+	@RequestMapping(value = "/contentUploadDetails/ContentUploadExport", method = RequestMethod.GET)
+	public ModelAndView getExcel(HttpServletRequest request) {
+		List<CountAndValue> ls = (List<CountAndValue>)request.getSession().getAttribute("CountAndValue");
+		
+		
+		//List<CountAndValue> animalList = contentCountImp.getAnimalList();
+		//-------------------ContentExcel  is the bean name define in the spring-excel-views.xml------------------
+		
+		ModelAndView model = new ModelAndView();
+		model.setViewName("ContentExcel");
+		model.addObject("CountAndValue", ls);
+		model.addObject("fist_heading", request.getSession().getAttribute("tbl_column1_display_name"));
+		model.addObject("second_heading", request.getSession().getAttribute("tbl_column2_display_name"));
+		model.addObject("CountAndValue", ls);
+		return model;
+		//return new ModelAndView("ContentExcel", "CountAndValue", ls);
+	}
+	
+	
+	
 	// pagination
 	@RequestMapping("/contentResponse/{content_type}")
 	public ModelAndView contentResponse(
@@ -128,5 +157,9 @@ public class ContentController {
 		return modelAndView;
 
 	}
+	
+	
+	
+	
 
 }

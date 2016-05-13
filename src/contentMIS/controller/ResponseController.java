@@ -6,36 +6,36 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
 
 import contentMIS.domain.CountAndValue;
 import contentMIS.service.ContentCountImp;
 
 @Controller
+@SessionAttributes({"CountAndValue","tbl_column1_display_name","tbl_column2_display_name"})
 public class ResponseController {
 	
 	@Autowired
 	ContentCountImp contentCountImp;
 	
-   @RequestMapping("/Waphits/{content_type}/{conditionWise}")
+   @RequestMapping("/Waphits/{conditionWise}")
 	public ModelAndView WapHits(
-			@PathVariable(value = "content_type") String content_type,
 			@PathVariable(value = "conditionWise") String conditionWise){
 		
 		ModelAndView modelAndView = new ModelAndView();
 		modelAndView.setViewName("dateSubmit");
-		modelAndView.addObject("onSubmitLink", "/ContentMIS/Waphits/"+content_type+"/"+conditionWise);
+		modelAndView.addObject("onSubmitLink", "/ContentMIS/Waphits/"+conditionWise);
 		
         return  modelAndView;
 	}
 	
-	@RequestMapping("/Waphits/{content_type}/{conditionWise}/{date}")
+	@RequestMapping("/Waphits/{conditionWise}/{date}")
 	public ModelAndView WapHits(
-			@PathVariable(value = "content_type") String content_type,
 			@PathVariable(value = "conditionWise") String conditionWise,
 			@PathVariable(value = "date") String date){
 		
-		System.out.println("content_type : "+content_type);
+		//System.out.println("content_type : "+content_type);
 		System.out.println("conditionWise : "+conditionWise);
 		System.out.println("date : "+date);
 		
@@ -43,11 +43,11 @@ public class ResponseController {
 		
 		List<CountAndValue>  waphits=null;
 		if(conditionWise.equalsIgnoreCase("hourwise")){
-			  waphits =contentCountImp.getHitResponseHourWise(date, content_type);
+			  waphits =contentCountImp.getHitResponseHourWise(date);
 		}
 		if(conditionWise.equalsIgnoreCase("datewise")){
 			System.out.println(" in  conditionWise :"+conditionWise);
-			 waphits = contentCountImp.getHitResponseDateWise(date, content_type);
+			 waphits = contentCountImp.getHitResponseDateWise(date);
 		}
 		
 		modelAndView.addObject("CountAndValue", waphits);

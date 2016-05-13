@@ -18,11 +18,11 @@ String datetime;
 	 private JdbcTemplate jdbcTemplate;
 	
 	@Override
-	public List<CountAndValue> getHitResponseDateWise(String datetime_temp,String content_type) {
+	public List<CountAndValue> getHitResponseDateWise(String datetime_temp) {
 		
 		datetime = datetime_temp;
 		String sql ="select dateTime,count(*) as temp from waphit where "
-				+ "datetime like '"+datetime+"%' and content_type like '"+content_type+"'";
+				+ "datetime like '"+datetime+"%'";
 		System.out.println("sql : "+sql);
 		List<CountAndValue> waphits = this.jdbcTemplate.query(
 				sql,
@@ -38,9 +38,9 @@ String datetime;
 	}
 
 	@Override
-	public List<CountAndValue> getHitResponseHourWise(String datetime,String content_type) {
+	public List<CountAndValue> getHitResponseHourWise(String datetime) {
 		String sql = "select substr(dateTime,1,13),count(*) as temp from waphit where  "
-				+ "datetime like '"+datetime+"%' and content_type like '"+content_type+"' group by substr(dateTime,1,13)";
+				+ "datetime like '"+datetime+"%' group by substr(dateTime,1,13)";
 		
 		
 		System.out.println("sql : "+sql);

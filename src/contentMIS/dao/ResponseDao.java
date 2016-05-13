@@ -7,7 +7,7 @@ import contentMIS.domain.CountAndValue;
 public interface ResponseDao {
 	
 	
-	public List<CountAndValue> getHitResponseDateWise(String datetime,String content_type);
-	public List<CountAndValue> getHitResponseHourWise(String datetime,String content_type);
+	public List<CountAndValue> getHitResponseDateWise(String datetime);
+	public List<CountAndValue> getHitResponseHourWise(String datetime);
 
 }

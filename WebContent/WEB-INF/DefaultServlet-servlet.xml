@@ -34,6 +34,16 @@ http://www.springframework.org/schema/aop/spring-aop.xsd">
 	
 <import resource="wapsItesql.xml" /> 
 
+
+
+<!-- //end excel sheet code -->
+<bean class="org.springframework.web.servlet.view.XmlViewResolver">
+	   <property name="location">
+	       <value>/WEB-INF/spring-excel-views.xml</value>
+	   </property>
+	   <property name="order" value="0" />
+	</bean>
+<!-- end excel sheet code -->
 <mvc:resources mapping="/resources/**" location="/resources/design/" />
 	
 

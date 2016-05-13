@@ -112,17 +112,15 @@ public class ContentCount extends ContentCountImp{
 	}
 
 	@Override
-	public List<CountAndValue> getHitResponseDateWise(String datetime,
-			String content_type) {
-		List<CountAndValue> waphits=	ResponseDao.getHitResponseDateWise(datetime, content_type);
+	public List<CountAndValue> getHitResponseDateWise(String datetime) {
+		List<CountAndValue> waphits=	ResponseDao.getHitResponseDateWise(datetime);
 		
 		return waphits;
 	}
 
 	@Override
-	public List<CountAndValue> getHitResponseHourWise(String datetime,
-			String content_type) {
-		List<CountAndValue> waphits	= ResponseDao.getHitResponseHourWise(datetime, content_type);
+	public List<CountAndValue> getHitResponseHourWise(String datetime) {
+		List<CountAndValue> waphits	= ResponseDao.getHitResponseHourWise(datetime);
 		return waphits;
 	}
 

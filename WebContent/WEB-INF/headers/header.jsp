@@ -121,22 +121,19 @@
 
 					</ul> <!-- /.nav-second-level --></li>
 			   <li>
-                            <a href="/ContentMIS/Waphits/Video/datewise"><i class="fa fa-sitemap fa-fw"></i> Users Response<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                              
-                                <li>
-                                    <a href="#">Video <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Users Response<span class="fa arrow"></span></a>
+                           
+                                  <ul class="nav nav-third-level">
                                         <li style="background: #337ab7; color: #fff; border-top: 1px solid #efefef;">
-                                             <a href="/ContentMIS/Waphits/Video/datewise" style="color: #fff;">DateWise</a>
+                                             <a href="/ContentMIS/Waphits/datewise" style="color: #fff;">DateWise</a>
                                         </li>
                                         <li style="background: #337ab7; color: #fff; border-top: 1px solid #efefef;">
-                                            <a href="/ContentMIS/Waphits/Video/hourwise" style="color: #fff;">Hour Wise</a>
+                                            <a href="/ContentMIS/Waphits/hourwise" style="color: #fff;">Hour Wise</a>
                                         </li>
                                        
                                     </ul>
-                                </li>
-                                <li>
+                               
+                             <!--    <li>
                                     <a href="#">Wallpaper <span class="fa arrow"></span></a>
                                     <ul class="nav nav-third-level">
                                         <li style="background: #337ab7; color: #fff; border-top: 1px solid #efefef;">
@@ -183,7 +180,7 @@
                                         </li>
                                        
                                     </ul>
-                                </li>
+                                </li> -->
                                 
                                 
                                 

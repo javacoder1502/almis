@@ -51,8 +51,8 @@ public abstract class ContentCountImp {
     
     
     
-	public abstract List<CountAndValue> getHitResponseDateWise(String datetime,String content_type);
-	public abstract List<CountAndValue> getHitResponseHourWise(String datetime,String content_type);
+	public abstract List<CountAndValue> getHitResponseDateWise(String datetime);
+	public abstract List<CountAndValue> getHitResponseHourWise(String datetime);
     	
 
 }
